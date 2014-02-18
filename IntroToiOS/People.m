@@ -28,6 +28,7 @@
     
     [dict enumerateKeysAndObjectsUsingBlock:^(id key, id value, BOOL *stop) {
         NSString *setKey = [NSString stringWithFormat:@"set%@:", key];
+        // setFirstName:
         if(value && ![value isKindOfClass:[NSDictionary class]] && [person respondsToSelector:NSSelectorFromString(setKey)]) {
             NSLog(@"setKey: %@", setKey);
             [person setValue:value forKey:key];

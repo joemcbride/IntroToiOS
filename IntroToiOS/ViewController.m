@@ -50,10 +50,9 @@
         NSLog(@"address:\n%@", address);
         
         self.addressLabel.text = address;
-        
-        [self.addressLabel sizeToFit];
     }
 }
+
 - (void)viewDidLayoutSubviews {
     self.addressLabel.numberOfLines = 0;
     [self.addressLabel sizeToFit];
