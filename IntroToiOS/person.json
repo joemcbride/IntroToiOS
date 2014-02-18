@@ -1,0 +1,10 @@
+{
+    "FirstName": "Grey",
+    "LastName": "Farley",
+    "Address": {
+        "Line1": "222 S. Main",
+        "City": "Salt Lake City",
+        "State": "UT",
+        "Zip": "84101"
+    }
+}

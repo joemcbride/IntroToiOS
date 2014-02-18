@@ -21,6 +21,15 @@
 		F9F37BB518B3C0DC00F0881B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F37B9718B3C0DC00F0881B /* UIKit.framework */; };
 		F9F37BBD18B3C0DC00F0881B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9F37BBB18B3C0DC00F0881B /* InfoPlist.strings */; };
 		F9F37BBF18B3C0DC00F0881B /* IntroToiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F37BBE18B3C0DC00F0881B /* IntroToiOSTests.m */; };
+		F9F37BCA18B3C15500F0881B /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F37BC918B3C15500F0881B /* People.m */; };
+		F9F37BCB18B3C15500F0881B /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F37BC918B3C15500F0881B /* People.m */; };
+		F9F37BCF18B3C19F00F0881B /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F37BCE18B3C19F00F0881B /* Address.m */; };
+		F9F37BD018B3C19F00F0881B /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F37BCE18B3C19F00F0881B /* Address.m */; };
+		F9F37BD318B3C23500F0881B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F37BD218B3C23500F0881B /* Person.m */; };
+		F9F37BD418B3C23500F0881B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F37BD218B3C23500F0881B /* Person.m */; };
+		F9F37BD618B3C6A700F0881B /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = F9F37BD518B3C6A700F0881B /* person.json */; };
+		F9F37BD718B3C6A700F0881B /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = F9F37BD518B3C6A700F0881B /* person.json */; };
+		F9F37BD818B3CEC000F0881B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F37BA918B3C0DC00F0881B /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,13 @@
 		F9F37BBA18B3C0DC00F0881B /* IntroToiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntroToiOSTests-Info.plist"; sourceTree = "<group>"; };
 		F9F37BBC18B3C0DC00F0881B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F9F37BBE18B3C0DC00F0881B /* IntroToiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroToiOSTests.m; sourceTree = "<group>"; };
+		F9F37BC818B3C15500F0881B /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		F9F37BC918B3C15500F0881B /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		F9F37BCD18B3C19F00F0881B /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		F9F37BCE18B3C19F00F0881B /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		F9F37BD118B3C23500F0881B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F9F37BD218B3C23500F0881B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F9F37BD518B3C6A700F0881B /* person.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = person.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +128,7 @@
 		F9F37B9918B3C0DC00F0881B /* IntroToiOS */ = {
 			isa = PBXGroup;
 			children = (
+				F9F37BCC18B3C18F00F0881B /* Model */,
 				F9F37BA218B3C0DC00F0881B /* AppDelegate.h */,
 				F9F37BA318B3C0DC00F0881B /* AppDelegate.m */,
 				F9F37BA518B3C0DC00F0881B /* Main.storyboard */,
@@ -150,6 +167,20 @@
 				F9F37BBB18B3C0DC00F0881B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9F37BCC18B3C18F00F0881B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9F37BC818B3C15500F0881B /* People.h */,
+				F9F37BC918B3C15500F0881B /* People.m */,
+				F9F37BCD18B3C19F00F0881B /* Address.h */,
+				F9F37BCE18B3C19F00F0881B /* Address.m */,
+				F9F37BD118B3C23500F0881B /* Person.h */,
+				F9F37BD218B3C23500F0881B /* Person.m */,
+				F9F37BD518B3C6A700F0881B /* person.json */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +261,7 @@
 			files = (
 				F9F37BAC18B3C0DC00F0881B /* Images.xcassets in Resources */,
 				F9F37B9E18B3C0DC00F0881B /* InfoPlist.strings in Resources */,
+				F9F37BD618B3C6A700F0881B /* person.json in Resources */,
 				F9F37BA718B3C0DC00F0881B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F37BD718B3C6A700F0881B /* person.json in Resources */,
 				F9F37BBD18B3C0DC00F0881B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F37BD318B3C23500F0881B /* Person.m in Sources */,
+				F9F37BCA18B3C15500F0881B /* People.m in Sources */,
 				F9F37BAA18B3C0DC00F0881B /* ViewController.m in Sources */,
 				F9F37BA418B3C0DC00F0881B /* AppDelegate.m in Sources */,
+				F9F37BCF18B3C19F00F0881B /* Address.m in Sources */,
 				F9F37BA018B3C0DC00F0881B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F37BD018B3C19F00F0881B /* Address.m in Sources */,
+				F9F37BCB18B3C15500F0881B /* People.m in Sources */,
+				F9F37BD418B3C23500F0881B /* Person.m in Sources */,
 				F9F37BBF18B3C0DC00F0881B /* IntroToiOSTests.m in Sources */,
+				F9F37BD818B3CEC000F0881B /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
