@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Intro to Xcode w/ iOS</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Intro to Xcode w/ iOS</h1>
+				</section>
+
+				<section>
+					<h2>Xcode / Objective-c</h2>
+				</section>
+
+				<section>
+					<h2>Cocoa Touch</h2>
+				</section>
+
+				<section>
+					<h2>Objective-c Is...</h2>
+				</section>
+
+				<section>
+					<p>Based on C</p>
+				</section>
+
+				<section>
+					<p>Statically typed with dynamic lookup.</p>
+				</section>
+
+				<section>
+					<h2>Objective-c Has...</h2>
+				</section>
+
+				<section>
+					<p>Classes, protocols, methods, properties, enums, etc.</p>
+				</section>
+
+				<section>
+					<p>"Generics", blocks, categories</p>
+				</section>
+
+				<section>
+					<p>NSObject, NSInteger, NSString, NSArray, NSMutableArray, etc.</p>
+				</section>
+
+				<section>
+					<h2>NS Stands For ...</h2>
+					<p>NeXTSTEP</p>
+				</section>
+
+				<section>
+					<p>ARC - Automatic Reference Counting</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Two phase initialization.
+
+						```
+Person *person = [[Person alloc] init];
+
+person.name = @"Quinn";
+						```
+					</script>
+				</section>
+
+				<section>
+					<h2>Objective-c does not have...</h2>
+				</section>
+
+				<section>
+					<p>Namespaces</p>
+				</section>
+
+				<section>
+					<p>Default constructor behavior</p>
+				</section>
+
+				<section>
+					<p>UI Databinding (missing in Cocoa Touch, K-V-B available in Cocoa)</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Person
+
+						```
+#import <Foundation/Foundation.h>
+// person.h
+@interface Person : NSObject
+	@property (nonatomic, copy) NSString name;
+	@property (atomic, assign) NSInteger age;
+	@property (nonatomic, strong) PhoneNumber phone;
+
+	-(id)init;
+	-(id)initWithName:(NSString *)name;
+	+(id)personWithName:(NSString *)name;
+@end
+
+// person.m
+#import "Person.h"
+@implementation Person
+
+	-(id)init {
+		self = [super init];
+		return self;
+	}
+
+	-(id)initWithName:(NSString *)name {
+		self = [super init];
+
+		if(self) {
+			_name = name;
+		}
+
+		return self;
+	}
+
+	+(id)personWithName:(NSString *)name {
+		return [[self alloc] initWithName:name];
+	}
+
+@end
+						```
+					</script>
+				</section>
+
+				<section>
+					<h2>The Community Uses...</h2>
+				</section>
+
+				<section>
+					<p><a href="http://cocoapods.org">Cocoapods</a> for a package manager.</p>
+				</section>
+
+				<section>
+					<p><a href="https://github.com/allending/Kiwi">Kiwi</a>, <a href="https://github.com/specta/specta">Specta</a>, <a href="https://github.com/pivotal/cedar">Cedar</a>, <a href="https://github.com/gh-unit/gh-unit">GHUnit</a> for unit testing.</p>
+				</section>
+
+				<section>
+					<p>OCUnit/SenTestingKit Xcode 2.1-4.0, XCTest Xcode 5+ for unit testing.</p>
+				</section>
+
+				<section>
+					<p><a href="https://github.com/JugglerShu/XVim">XVim</a> for vim in Xcode.</p>
+				</section>
+
+				<section>
+					<p><a href="https://github.com/facebook/xctool">xctool</a> for terminal/CI builds.</p>
+				</section>
+
+				<section>
+					<h2>Xcode 5</h2>
+					<p>OSX 10.8+, iOS 6+</p>
+				</section>
+
+				<section>
+					<h2>Learning iOS</h2>
+					<ul>
+						<li><a href="http://nsscreencast.com">NSScreencast</a> - short iOS training videos, $9/month $100/year, some free</li>
+						<li><a href="http://www.amazon.com/Programming-Objective-C-6th-Developers-Library-ebook/dp/B00GSRITNO/">Programming in Objective-c, 6th Edition - iOS 7 / Xcode 5</a></li>
+						<li><a href="http://www.amazon.com/Effective-Objective-C-2-0-Specific-Development/dp/0321917014/">Effective Objective-c</a></li>
+						<li><a href="http://www.amazon.com/iOS-Components-Frameworks-Understanding-Developers-ebook/dp/B00FRHKB9G">iOS Components and Frameworks: Understanding the Advanced Features of the iOS SDK</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Joe McBride / <a href="http://uicraftsman.com">uicraftsman.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
