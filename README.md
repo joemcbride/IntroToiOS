@@ -1,6 +1,8 @@
 Intro to iOS
 ==========
 
+[Video of Presentation](https://www.youtube.com/watch?v=4B8J0v-a1Jc)
+
 This project uses [CocoaPods](http://cocoapods.org) for dependency management.  Run the following at the root of the project to download and install dependencies.
 
     $ sudo gem install cocoapods
