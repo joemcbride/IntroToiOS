@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F9F37B8F18B3C0DC00F0881B"
-               BuildableName = "IntroToiOS.app"
-               BlueprintName = "IntroToiOS"
+               BlueprintIdentifier = "F9F37BB018B3C0DC00F0881B"
+               BuildableName = "IntroToiOSTests.xctest"
+               BlueprintName = "IntroToiOSTests"
                ReferencedContainer = "container:IntroToiOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -39,15 +39,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F9F37B8F18B3C0DC00F0881B"
-            BuildableName = "IntroToiOS.app"
-            BlueprintName = "IntroToiOS"
-            ReferencedContainer = "container:IntroToiOS.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -58,15 +49,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F9F37B8F18B3C0DC00F0881B"
-            BuildableName = "IntroToiOS.app"
-            BlueprintName = "IntroToiOS"
-            ReferencedContainer = "container:IntroToiOS.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -76,15 +58,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F9F37B8F18B3C0DC00F0881B"
-            BuildableName = "IntroToiOS.app"
-            BlueprintName = "IntroToiOS"
-            ReferencedContainer = "container:IntroToiOS.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

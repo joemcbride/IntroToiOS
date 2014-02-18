@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F7FBEBDB7B343778618471D /* libPods-IntroToiOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F62CE89C2E849EEB8C43198 /* libPods-IntroToiOSTests.a */; };
+		C03E4C934BEF40D2A6E5E072 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE02E0B0E9A4099AE0DCA13 /* libPods.a */; };
 		F9F37B9418B3C0DC00F0881B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F37B9318B3C0DC00F0881B /* Foundation.framework */; };
 		F9F37B9618B3C0DC00F0881B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F37B9518B3C0DC00F0881B /* CoreGraphics.framework */; };
 		F9F37B9818B3C0DC00F0881B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F37B9718B3C0DC00F0881B /* UIKit.framework */; };
@@ -30,6 +32,7 @@
 		F9F37BD618B3C6A700F0881B /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = F9F37BD518B3C6A700F0881B /* person.json */; };
 		F9F37BD718B3C6A700F0881B /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = F9F37BD518B3C6A700F0881B /* person.json */; };
 		F9F37BD818B3CEC000F0881B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F37BA918B3C0DC00F0881B /* ViewController.m */; };
+		F9F37BDB18B3DC9F00F0881B /* IntroToiOSTestsKiwi.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F37BDA18B3DC9F00F0881B /* IntroToiOSTestsKiwi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F62CE89C2E849EEB8C43198 /* libPods-IntroToiOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntroToiOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE02E0B0E9A4099AE0DCA13 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D48D5013A246A8B6A2F060 /* Pods-IntroToiOSTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntroToiOSTests.xcconfig"; path = "Pods/Pods-IntroToiOSTests.xcconfig"; sourceTree = "<group>"; };
+		ECB320105553480EA380D7AA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F9F37B9018B3C0DC00F0881B /* IntroToiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntroToiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F37B9318B3C0DC00F0881B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F9F37B9518B3C0DC00F0881B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,6 +76,7 @@
 		F9F37BD118B3C23500F0881B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		F9F37BD218B3C23500F0881B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		F9F37BD518B3C6A700F0881B /* person.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = person.json; sourceTree = "<group>"; };
+		F9F37BDA18B3DC9F00F0881B /* IntroToiOSTestsKiwi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroToiOSTestsKiwi.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 				F9F37B9618B3C0DC00F0881B /* CoreGraphics.framework in Frameworks */,
 				F9F37B9818B3C0DC00F0881B /* UIKit.framework in Frameworks */,
 				F9F37B9418B3C0DC00F0881B /* Foundation.framework in Frameworks */,
+				C03E4C934BEF40D2A6E5E072 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +98,7 @@
 				F9F37BB318B3C0DC00F0881B /* XCTest.framework in Frameworks */,
 				F9F37BB518B3C0DC00F0881B /* UIKit.framework in Frameworks */,
 				F9F37BB418B3C0DC00F0881B /* Foundation.framework in Frameworks */,
+				5F7FBEBDB7B343778618471D /* libPods-IntroToiOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +112,8 @@
 				F9F37BB818B3C0DC00F0881B /* IntroToiOSTests */,
 				F9F37B9218B3C0DC00F0881B /* Frameworks */,
 				F9F37B9118B3C0DC00F0881B /* Products */,
+				ECB320105553480EA380D7AA /* Pods.xcconfig */,
+				D4D48D5013A246A8B6A2F060 /* Pods-IntroToiOSTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +133,8 @@
 				F9F37B9518B3C0DC00F0881B /* CoreGraphics.framework */,
 				F9F37B9718B3C0DC00F0881B /* UIKit.framework */,
 				F9F37BB218B3C0DC00F0881B /* XCTest.framework */,
+				CBE02E0B0E9A4099AE0DCA13 /* libPods.a */,
+				2F62CE89C2E849EEB8C43198 /* libPods-IntroToiOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,6 +170,7 @@
 			children = (
 				F9F37BBE18B3C0DC00F0881B /* IntroToiOSTests.m */,
 				F9F37BB918B3C0DC00F0881B /* Supporting Files */,
+				F9F37BDA18B3DC9F00F0881B /* IntroToiOSTestsKiwi.m */,
 			);
 			path = IntroToiOSTests;
 			sourceTree = "<group>";
@@ -190,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9F37BC218B3C0DC00F0881B /* Build configuration list for PBXNativeTarget "IntroToiOS" */;
 			buildPhases = (
+				BF1CF0F16A6E4BA0B4678193 /* Check Pods Manifest.lock */,
 				F9F37B8C18B3C0DC00F0881B /* Sources */,
 				F9F37B8D18B3C0DC00F0881B /* Frameworks */,
 				F9F37B8E18B3C0DC00F0881B /* Resources */,
+				06A92174FE434D95980D2BB7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9F37BC518B3C0DC00F0881B /* Build configuration list for PBXNativeTarget "IntroToiOSTests" */;
 			buildPhases = (
+				886D940A9FC341B784AB1BA9 /* Check Pods Manifest.lock */,
 				F9F37BAD18B3C0DC00F0881B /* Sources */,
 				F9F37BAE18B3C0DC00F0881B /* Frameworks */,
 				F9F37BAF18B3C0DC00F0881B /* Resources */,
+				419A909AC9044586A09EADEE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +296,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06A92174FE434D95980D2BB7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		419A909AC9044586A09EADEE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-IntroToiOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		886D940A9FC341B784AB1BA9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF1CF0F16A6E4BA0B4678193 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9F37B8C18B3C0DC00F0881B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -296,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9F37BD018B3C19F00F0881B /* Address.m in Sources */,
+				F9F37BDB18B3DC9F00F0881B /* IntroToiOSTestsKiwi.m in Sources */,
 				F9F37BCB18B3C15500F0881B /* People.m in Sources */,
 				F9F37BD418B3C23500F0881B /* Person.m in Sources */,
 				F9F37BBF18B3C0DC00F0881B /* IntroToiOSTests.m in Sources */,
@@ -415,6 +498,7 @@
 		};
 		F9F37BC318B3C0DC00F0881B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECB320105553480EA380D7AA /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -428,6 +512,7 @@
 		};
 		F9F37BC418B3C0DC00F0881B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECB320105553480EA380D7AA /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -441,6 +526,7 @@
 		};
 		F9F37BC618B3C0DC00F0881B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4D48D5013A246A8B6A2F060 /* Pods-IntroToiOSTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntroToiOS.app/IntroToiOS";
@@ -464,6 +550,7 @@
 		};
 		F9F37BC718B3C0DC00F0881B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4D48D5013A246A8B6A2F060 /* Pods-IntroToiOSTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntroToiOS.app/IntroToiOS";
@@ -500,6 +587,7 @@
 				F9F37BC418B3C0DC00F0881B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9F37BC518B3C0DC00F0881B /* Build configuration list for PBXNativeTarget "IntroToiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +596,7 @@
 				F9F37BC718B3C0DC00F0881B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

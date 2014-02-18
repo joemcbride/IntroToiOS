@@ -1,0 +1,6 @@
+[
+  "-workspace", "IntroToiOS.xcworkspace",
+  "-scheme", "IntroToiOSTests",
+  "-configuration", "Debug",
+  "-sdk", "iphonesimulator"
+]

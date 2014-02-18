@@ -1,0 +1,5 @@
+.DS_STORE
+Pods
+podfile.lock
+gemfile.lock
+xcuserdata
