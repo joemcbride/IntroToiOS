@@ -28,6 +28,7 @@
     
     NSString *fileData = [NSString stringWithContentsOfFile:file encoding:NSUTF8StringEncoding error:&error];
     
+	// get json data from a url
 //    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/databases/DBName/docs/person/38a6e3a2-3140-465d-b01d-60fc6ebe3502"];
 //    NSString *fileData = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:&error];
     

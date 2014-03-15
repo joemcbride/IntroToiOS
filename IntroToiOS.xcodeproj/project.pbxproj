@@ -169,8 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				F9F37BBE18B3C0DC00F0881B /* IntroToiOSTests.m */,
-				F9F37BB918B3C0DC00F0881B /* Supporting Files */,
 				F9F37BDA18B3DC9F00F0881B /* IntroToiOSTestsKiwi.m */,
+				F9F37BB918B3C0DC00F0881B /* Supporting Files */,
 			);
 			path = IntroToiOSTests;
 			sourceTree = "<group>";
